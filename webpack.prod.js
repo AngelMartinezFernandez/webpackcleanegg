@@ -73,10 +73,13 @@ module.exports = {
         new MinifyPlugin(),
         new CleanWebpackPlugin(),
 
-        new CopyPlugin({
-            patterns: [
-            { from: 'src/assets', to: 'assets/' },
-        ]})
+        new CopyPlugin(
+            [
+                
+                { from: 'src/assets', to: 'assets/' },
+                
+            ]
+        ),
     ]
     
     

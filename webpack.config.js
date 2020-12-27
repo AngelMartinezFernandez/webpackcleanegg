@@ -57,9 +57,13 @@ module.exports = {
             filename: '[name].css',
             ignoreOrder: false
         }),
-        new CopyPlugin([
-            { from: 'src/assets', to: 'assets/' },
-        ]),
+        new CopyPlugin(
+            [
+                
+                { from: 'src/assets', to: 'assets/' },
+                
+            ]
+        ),
     ]
 
 }
